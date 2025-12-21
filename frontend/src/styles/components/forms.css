@@ -1,0 +1,18 @@
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #e6e9ee;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--azul);
+}
+
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}

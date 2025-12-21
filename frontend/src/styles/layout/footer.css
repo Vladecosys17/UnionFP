@@ -1,0 +1,21 @@
+.footer {
+  padding: 36px 0;
+  background: linear-gradient(
+    180deg,
+    rgba(150, 25, 142, 0.04),
+    rgba(82, 172, 226, 0.02)
+  );
+  margin-top: 48px;
+  border-top: 1px solid rgba(16, 24, 40, 0.04);
+}
+
+.footer .cols {
+  display: flex;
+  gap: 40px;
+}
+
+@media (max-width: 700px) {
+  .footer .cols {
+    flex-direction: column;
+  }
+}
