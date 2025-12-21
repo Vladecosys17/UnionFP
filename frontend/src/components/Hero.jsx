@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -9,6 +10,7 @@ export default function Hero() {
           Unión Fuerza y Cambio — Transformando comunidades con proyectos
           sociales sostenibles
         </h1>
+
         <p className="lead">
           Somos una organización civil dedicada a promover educación,
           emprendimiento y desarrollo comunitario en zonas urbanas y rurales.
@@ -17,12 +19,12 @@ export default function Hero() {
         </p>
 
         <div style={{ display: "flex", gap: 12, marginTop: 20 }}>
-          <a href="/programs" className="btn-primary">
+          <Link to="/programs" className="btn-primary">
             Ver programas
-          </a>
-          <a href="/involve" className="btn-ghost">
+          </Link>
+          <Link to="/involve" className="btn-ghost">
             Cómo ayudar
-          </a>
+          </Link>
         </div>
 
         <div className="grid" style={{ marginTop: 24 }}>
@@ -56,9 +58,9 @@ export default function Hero() {
           </p>
           <div style={{ display: "flex", gap: 8, marginTop: 12 }}>
             <div style={{ flex: 1 }}>
-              <a className="btn-primary" href="/involve">
+              <Link className="btn-primary" to="/involve">
                 Registrar proyecto
-              </a>
+              </Link>
             </div>
           </div>
         </div>
