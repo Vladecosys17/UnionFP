@@ -9,7 +9,9 @@ return (
 <div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-start'}}>
 <div style={{maxWidth:320}}>
 <div style={{display:'flex',alignItems:'center',gap:12}}>
-<div className="logo">UFC</div>
+<div className="logo">
+        <img src="/images/logo.jpg" alt="Unión Fuerza y Cambio" />
+</div>
 <div>
 <div style={{fontWeight:700}}>Unión Fuerza y Cambio</div>
 <div className="small-muted">Fomentando cambio local con proyectos sostenibles</div>

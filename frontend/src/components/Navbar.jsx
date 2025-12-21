@@ -10,15 +10,15 @@ export default function Navbar() {
 
       <header className="container navbar">
         <div className="brand">
-          <div className="logo">UFC</div>
-          <div>
-            <div style={{ fontWeight: 700 }}>Unión Fuerza y Cambio</div>
+            <div className="logo">
+    <img src="/images/logo.jpg" alt="Unión Fuerza y Cambio" />
+  </div>
+            <div className="brand-title" style={{ fontWeight: 700 }}>Unión Fuerza y Cambio</div>
             <div className="small-muted">
               Asociación civil sin fines de lucro
             </div>
           </div>
-        </div>
-
+          
         {/* Navegación principal */}
         <nav className={`nav-links ${open ? "open" : ""}`}>
           <Link to="/" onClick={() => setOpen(false)}>Inicio</Link>
