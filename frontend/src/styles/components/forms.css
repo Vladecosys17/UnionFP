@@ -16,3 +16,21 @@
   min-height: 120px;
   resize: vertical;
 }
+
+.form {
+  margin-top: 24px;
+  display: grid;
+  gap: 14px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.form-success {
+  margin-top: 16px;
+  background: rgba(131, 198, 55, 0.08);
+  border: 1px solid rgba(131, 198, 55, 0.25);
+}

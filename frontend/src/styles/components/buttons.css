@@ -22,3 +22,21 @@
   border-radius: 10px;
   font-weight: 500;
 }
+
+.btn-ghost-2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--morado);
+  border: 1px solid rgba(150, 25, 142, 0.35);
+  background: transparent;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.btn-ghost-2:hover {
+  background: rgba(150, 25, 142, 0.08);
+}

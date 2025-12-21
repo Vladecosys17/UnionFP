@@ -3,3 +3,11 @@
   margin: 0 auto;
   padding: 24px;
 }
+
+.section {
+  padding: 48px 0;
+}
+
+.container-sm {
+  max-width: 720px;
+}

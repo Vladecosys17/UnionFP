@@ -1,21 +1,70 @@
 .footer {
-  padding: 36px 0;
-  background: linear-gradient(
-    180deg,
-    rgba(150, 25, 142, 0.04),
-    rgba(82, 172, 226, 0.02)
-  );
-  margin-top: 48px;
-  border-top: 1px solid rgba(16, 24, 40, 0.04);
+  padding: 48px 0 24px;
+  background-color: #f9fafb;
 }
 
-.footer .cols {
+.footer-top {
   display: flex;
-  gap: 40px;
+  justify-content: space-between;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  max-width: 340px;
+}
+
+.footer-brand-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-address {
+  margin-top: 12px;
+}
+
+.footer-cols {
+  display: flex;
+  gap: 48px;
+}
+
+.footer-links {
+  list-style: none;
+  margin-top: 12px;
+  padding: 0;
+}
+
+.footer-links li + li {
+  margin-top: 6px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact {
+  margin-top: 12px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(16, 24, 40, 0.08);
+  margin-top: 32px;
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 @media (max-width: 700px) {
-  .footer .cols {
+  .footer-cols {
     flex-direction: column;
+    gap: 24px;
   }
 }
