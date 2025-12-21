@@ -11,18 +11,19 @@ import Contact from './pages/Contact'
 
 export default function App(){
 return (
-<div>
-<Navbar />
-<main className="container">
-<Routes>
-<Route path="/" element={<Home/>} />
-<Route path="/about" element={<About/>} />
-<Route path="/programs" element={<Programs/>} />
-<Route path="/involve" element={<GetInvolved/>} />
-<Route path="/contact" element={<Contact/>} />
-</Routes>
-</main>
-<Footer />
-</div>
+<>
+  <Navbar />
+  <main className="container">
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/programs" element={<Programs />} />
+      <Route path="/involve" element={<GetInvolved />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+  </main>
+  <Footer />
+</>
+
 )
 }
