@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <section className="hero section">
-      <div>
-        <div className="tag">Comunidad · Acción · Cambio</div>
-        <h1>
+      <div className="hero-content">
+        <span className="tag">Comunidad · Acción · Cambio</span>
+
+        <h1 className="hero-title">
           Unión Fuerza y Cambio — Transformando comunidades con proyectos
           sociales sostenibles
         </h1>
@@ -18,7 +19,7 @@ export default function Hero() {
           impacto medible.
         </p>
 
-        <div style={{ display: "flex", gap: 12, marginTop: 20 }}>
+        <div className="hero-actions">
           <Link to="/programs" className="btn-primary">
             Ver programas
           </Link>
@@ -27,7 +28,7 @@ export default function Hero() {
           </Link>
         </div>
 
-        <div className="grid" style={{ marginTop: 24 }}>
+        <div className="grid grid-3 hero-features">
           <div className="card">
             <h4>Educación comunitaria</h4>
             <p className="small-muted">
@@ -35,12 +36,14 @@ export default function Hero() {
               oficios.
             </p>
           </div>
+
           <div className="card">
             <h4>Emprendimiento</h4>
             <p className="small-muted">
               Apoyo a microemprendimientos con mentoría y microcréditos.
             </p>
           </div>
+
           <div className="card">
             <h4>Salud preventiva</h4>
             <p className="small-muted">
@@ -50,24 +53,22 @@ export default function Hero() {
         </div>
       </div>
 
-      <aside>
+      <aside className="hero-aside">
         <div className="hero-card">
-          <h3>Próximo evento: Feria de Emprendimiento</h3>
+          <h3>Próximo evento</h3>
           <p className="small-muted">
+            Feria de Emprendimiento <br />
             Sábado 20 de septiembre · Centro Cultural Municipal
           </p>
-          <div style={{ display: "flex", gap: 8, marginTop: 12 }}>
-            <div style={{ flex: 1 }}>
-              <Link className="btn-primary" to="/involve">
-                Registrar proyecto
-              </Link>
-            </div>
-          </div>
+
+          <Link to="/involve" className="btn-primary full-width">
+            Registrar proyecto
+          </Link>
         </div>
 
-        <div style={{ marginTop: 16 }} className="card">
+        <div className="card">
           <h4>Métodos de apoyo</h4>
-          <ul className="small-muted" style={{ marginTop: 8 }}>
+          <ul className="small-muted list">
             <li>Donaciones periódicas</li>
             <li>Voluntariado</li>
             <li>Alianzas empresariales</li>

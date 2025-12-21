@@ -1,0 +1,20 @@
+.legal {
+  max-width: 760px;
+}
+
+.legal h2 {
+  margin-bottom: 12px;
+}
+
+.legal .lead {
+  margin-bottom: 32px;
+}
+
+.legal-block {
+  margin-bottom: 24px;
+}
+
+.legal-block h4 {
+  margin-bottom: 6px;
+  font-size: 16px;
+}

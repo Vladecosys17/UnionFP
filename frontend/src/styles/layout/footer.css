@@ -62,6 +62,14 @@
   gap: 12px;
 }
 
+.social-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+
 @media (max-width: 700px) {
   .footer-cols {
     flex-direction: column;

@@ -22,9 +22,9 @@ export default function Footer() {
             </div>
 
             <p className="small-muted footer-address">
-              Dirección: Calle Ejemplo 123 · Ciudad · País
+              Dirección: Calle Francisco I. Madero #307, Col. Loma de Pérez
               <br />
-              RFC / ID fiscal: 000000000
+              RFC / ID fiscal: UFC250124616
             </p>
           </div>
 
@@ -42,10 +42,30 @@ export default function Footer() {
             <div>
               <h4>Contacto</h4>
               <p className="small-muted footer-contact">
-                hola@unionfuerzaycambio.org
+                Email: unionfuerzaycambio@gmail.com
                 <br />
-                +52 55 0000 0000
+                +52 (639)1346427
               </p>
+              <div className="social-actions">
+  <a
+    href="https://www.facebook.com/share/1GrWiihRpz/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn-ghost"
+  >
+    Facebook
+  </a>
+
+  <a
+    href="https://wa.me/526391346427"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="btn-primary"
+  >
+    WhatsApp
+  </a>
+</div>
+
             </div>
           </div>
         </div>
@@ -53,7 +73,7 @@ export default function Footer() {
         {/* Legal */}
         <div className="footer-bottom">
           <p className="small-muted">
-            © {new Date().getFullYear()} Unión Fuerza y Cambio — Todos los derechos reservados
+            © {new Date().getFullYear()} Unión Fuerza y Cambio de Delicias A.C.
           </p>
           <p className="small-muted">Política de privacidad · Términos</p>
         </div>
