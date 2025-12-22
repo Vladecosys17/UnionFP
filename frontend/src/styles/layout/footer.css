@@ -1,42 +1,42 @@
 .footer {
-  padding: 48px 0 24px;
+  padding: 3rem 0 1.5rem; /* 48px 0 24px ≈ 3rem 0 1.5rem */
   background-color: #f9fafb;
 }
 
 .footer-top {
   display: flex;
   justify-content: space-between;
-  gap: 48px;
+  gap: 3rem; /* 48px ≈ 3rem */
   flex-wrap: wrap;
 }
 
 .footer-brand {
-  max-width: 340px;
+  max-width: 21.25rem; /* 340px ≈ 21.25rem */
 }
 
 .footer-brand-header {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem; /* 12px ≈ 0.75rem */
 }
 
 .footer-address {
-  margin-top: 12px;
+  margin-top: 0.75rem; /* 12px ≈ 0.75rem */
 }
 
 .footer-cols {
   display: flex;
-  gap: 48px;
+  gap: 3rem; /* 48px ≈ 3rem */
 }
 
 .footer-links {
   list-style: none;
-  margin-top: 12px;
+  margin-top: 0.75rem; /* 12px ≈ 0.75rem */
   padding: 0;
 }
 
 .footer-links li + li {
-  margin-top: 6px;
+  margin-top: 0.375rem; /* 6px ≈ 0.375rem */
 }
 
 .footer-links a {
@@ -49,30 +49,30 @@
 }
 
 .footer-contact {
-  margin-top: 12px;
+  margin-top: 0.75rem; /* 12px ≈ 0.75rem */
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(16, 24, 40, 0.08);
-  margin-top: 32px;
-  padding-top: 16px;
+  border-top: 0.0625rem solid rgba(16, 24, 40, 0.08); /* 1px */
+  margin-top: 2rem; /* 32px ≈ 2rem */
+  padding-top: 1rem; /* 16px ≈ 1rem */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 0.75rem; /* 12px ≈ 0.75rem */
 }
 
 .social-actions {
   display: flex;
-  gap: 12px;
+  gap: 0.75rem; /* 12px ≈ 0.75rem */
   align-items: center;
-  margin-top: 8px;
+  margin-top: 0.5rem; /* 8px ≈ 0.5rem */
 }
 
-
+/* Responsive */
 @media (max-width: 700px) {
   .footer-cols {
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5rem; /* 24px ≈ 1.5rem */
   }
 }
