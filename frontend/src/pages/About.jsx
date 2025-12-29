@@ -9,7 +9,7 @@ export default function About() {
         <header className="about-header">
           <h2>Quiénes somos</h2>
           <p className="lead">
-            Unión Fuerza y Cambio es una asociación civil fundada en 2024 enfocada
+            Unión Fuerza y Cambio es una asociación civil fundada el 25 de enero de 2025 enfocada
             en la recuperación ambiental y la activación comunitaria como base
             para el desarrollo social sostenible.
           </p>

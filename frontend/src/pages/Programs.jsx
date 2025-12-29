@@ -1,23 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
-const programs = [
-  {
-    id: 1,
-    title: "Capacitación Digital",
-    desc: "Cursos intensivos en herramientas digitales y empleo remoto.",
-  },
-  {
-    id: 2,
-    title: "Emprende Local",
-    desc: "Mentoría y microcréditos para iniciativas comunitarias.",
-  },
-  {
-    id: 3,
-    title: "Salud y Prevención",
-    desc: "Jornadas médicas y talleres de prevención.",
-  },
-];
+import ProgramCard from "../components/ProgramCard";
+import { programs } from "../data/programs";
 
 export default function Programs() {
   return (
@@ -30,19 +13,17 @@ export default function Programs() {
 
       <div className="grid grid-3">
         {programs.map((program) => (
-          <div key={program.id} className="card">
-            <h4>{program.title}</h4>
-
-            <p className="small-muted">{program.desc}</p>
-
-            <div className="card-actions">
-              <Link to="/involve" className="btn-ghost-2">
-                Más información
-              </Link>
-            </div>
-          </div>
+          <ProgramCard
+            key={program.id}
+            title={program.title}
+            desc={program.desc}
+            facebookLink={program.facebookLink}
+            location={program.location}
+            eventDate={program.eventDate}
+          />
         ))}
       </div>
     </section>
   );
 }
+  

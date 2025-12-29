@@ -22,7 +22,7 @@ export default function Footer() {
             </div>
 
             <p className="small-muted footer-address">
-              Dirección: Calle Francisco I. Madero #307, Col. Loma de Pérez
+              Dirección: Calle Francisco I. Madero #307, Sector poniente Loma de Pérez, Delicias, Chihuahua, México, C.P. 33050. 
               <br />
               RFC / ID fiscal: UFC250124616
             </p>
