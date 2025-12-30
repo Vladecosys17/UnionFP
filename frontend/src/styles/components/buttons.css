@@ -1,0 +1,42 @@
+.btn-primary {
+  background: var(--morado);
+  color: white;
+  padding: 0.625rem 1rem; /* 10px 16px ≈ 0.625rem 1rem */
+  border-radius: 0.625rem; /* 10px ≈ 0.625rem */
+  border: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.25rem 0.75rem rgba(148, 26, 140, 0.25); /* 4px 12px */
+}
+
+.btn-primary:hover {
+  filter: brightness(1.2);
+}
+
+.btn-ghost {
+  background: transparent;
+  border: 0.0625rem solid rgba(16, 24, 40, 0.12); /* 1px ≈ 0.0625rem */
+  padding: 0.5rem 0.75rem; /* 8px 12px ≈ 0.5rem 0.75rem */
+  border-radius: 0.625rem; /* 10px ≈ 0.625rem */
+  font-weight: 500;
+}
+
+.btn-ghost-2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.875rem; /* 8px 14px ≈ 0.5rem 0.875rem */
+  border-radius: 62.5rem; /* 999px ≈ 62.5rem para pill-shape */
+  font-size: 0.875rem; /* 14px ≈ 0.875rem */
+  font-weight: 500;
+  color: var(--morado);
+  border: 0.0625rem solid rgba(150, 25, 142, 0.35); /* 1px */
+  background: transparent;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.btn-ghost-2:hover {
+  background: rgba(150, 25, 142, 0.08);
+}

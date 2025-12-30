@@ -1,0 +1,13 @@
+.container {
+  max-width: var(--max-width); /* ya definido en rem en :root */
+  margin: 0 auto;
+  padding: 1.5rem; /* 24px ≈ 1.5rem */
+}
+
+.section {
+  padding: 3rem 0; /* 48px ≈ 3rem */
+}
+
+.container-sm {
+  max-width: 45rem; /* 720px ≈ 45rem */
+}

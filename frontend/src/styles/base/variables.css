@@ -1,0 +1,10 @@
+:root {
+  --card: #f8fafc;
+  --radius: 0.75rem; /* 12px ≈ 0.75rem */
+  --max-width: 68.75rem; /* 1100px ≈ 68.75rem */
+
+  --azul: #52ace2;
+  --verde: #83c637;
+  --morado: #96198e;
+  --muted: #6b7280;
+}

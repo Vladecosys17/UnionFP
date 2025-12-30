@@ -2,69 +2,101 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="section">
+    <section className="section about">
       <div className="container">
-        <h2>Quiénes somos</h2>
-        <p className="lead">
-          Unión Fuerza y Cambio es una asociación civil fundada en 2024 con la
-          misión de fortalecer capacidades locales y promover oportunidades de
-          desarrollo en comunidades vulnerables.
-        </p>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: 20,
-            marginTop: 20,
-          }}
-        >
+        {/* Identidad */}
+        <header className="about-header">
+          <h2>Quiénes somos</h2>
+          <p className="lead">
+            Unión Fuerza y Cambio es una asociación civil fundada el 25 de enero de 2025 enfocada
+            en la recuperación ambiental y la activación comunitaria como base
+            para el desarrollo social sostenible.
+          </p>
+        </header>
+
+        {/* Propósito */}
+        <section className="about-block">
+          <h3>Propósito</h3>
+          <p className="small-muted">
+            Atender el deterioro de espacios públicos mediante procesos de
+            reforestación participativa que fortalezcan el tejido social y la
+            corresponsabilidad ciudadana.
+          </p>
+        </section>
+
+        {/* Misión y Visión */}
+        <section className="about-block grid grid-2">
           <div className="card">
             <h4>Misión</h4>
             <p className="small-muted">
-              Promover la rehabilitación y reforestación de espacios públicos
-              mediante la participación activa de la comunidad, fomentando la
-              conciencia ambiental, el sentido de pertenencia y la
-              responsabilidad social, para construir entornos mas verdes,
-              saludable y humanos.
+              Promover la rehabilitación y reforestación de espacios públicos a
+              través de la participación comunitaria organizada, fomentando
+              conciencia ambiental y responsabilidad social.
             </p>
           </div>
+
           <div className="card">
             <h4>Visión</h4>
             <p className="small-muted">
-              Ser una asociación líder en la transformación y conservación de
-              espacios públicos a través de la reforestación y la partición
-              comunitaria, reconocida por inspirar una cultura ambiental
-              responsable, solidaria y sostenible, donde cada persona se sienta
-              parte activa del cambió hacia comunidades más verdes , unidas y
-              resilientes.
+              Consolidarnos como una asociación referente en la transformación
+              sostenible de espacios públicos, impulsando comunidades más
+              verdes, cohesionadas y resilientes.
             </p>
           </div>
-        </div>
+        </section>
 
-        <h3 style={{ marginTop: 20 }}>Equipo</h3>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3,1fr)",
-            gap: 16,
-            marginTop: 12,
-          }}
-        >
-          <div className="card">
-            <strong>María López</strong>
-            <p className="small-muted">Directora Ejecutiva</p>
+        {/* Líneas de acción */}
+        <section className="about-block">
+          <h3>Líneas de acción</h3>
+          <ul className="list">
+            <li>Reforestación y rehabilitación de espacios públicos</li>
+            <li>Educación ambiental comunitaria</li>
+            <li>Participación ciudadana y voluntariado</li>
+            <li>Alianzas con organizaciones y sector público</li>
+          </ul>
+        </section>
+
+        {/* Valores */}
+        <section className="about-block">
+          <h3>Valores operativos</h3>
+          <div className="grid grid-3">
+            <div className="card">Transparencia</div>
+            <div className="card">Trabajo comunitario</div>
+            <div className="card">Sostenibilidad</div>
           </div>
-          <div className="card">
-            <strong>Carlos Rivera</strong>
-            <p className="small-muted">Coordinador de Programas</p>
+        </section>
+
+        {/* Equipo */}
+        <section className="about-block">
+          <h3>Equipo</h3>
+          <div className="grid grid-3">
+            <div className="card">
+              <strong>María López</strong>
+              <p className="small-muted">Directora Ejecutiva</p>
+            </div>
+
+            <div className="card">
+              <strong>Vladimir Martínez</strong>
+              <p className="small-muted">Coordinador de Programas</p>
+            </div>
+
+            <div className="card">
+              <strong>Claudia Cárdenas</strong>
+              <p className="small-muted">Responsable de Alianzas</p>
+            </div>
           </div>
-          <div className="card">
-            <strong>Ana Pérez</strong>
-            <p className="small-muted">Responsable de Alianzas</p>
-          </div>
-        </div>
+        </section>
+
+        {/* Marco legal */}
+        <section className="about-block about-legal">
+          <p className="small-muted">
+            Unión Fuerza y Cambio es una asociación civil sin fines de lucro,
+            constituida conforme a la legislación mexicana.
+          </p>
+        </section>
+
       </div>
-    </div>
+    </section>
   );
 }

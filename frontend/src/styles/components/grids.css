@@ -1,0 +1,35 @@
+/* Grid variants */
+.grid {
+  display: grid;
+  gap: 1.25rem; /* 20px ≈ 1.25rem */
+  margin-top: 1.5rem; /* 24px ≈ 1.5rem */
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Section titles */
+.section-title {
+  margin-top: 2rem; /* 32px ≈ 2rem */
+  font-size: 1.25rem; /* 20px ≈ 1.25rem */
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
