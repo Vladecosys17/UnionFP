@@ -8,7 +8,19 @@ datasource db {
 }
 
 model User {
-  id    Int    @id @default(autoincrement())
-  email String @unique
-  name  String
+  id           Int       @id @default(autoincrement())
+  email        String    @unique
+  name         String?
+  passwordHash String
+  projects     Project[]
+  createdAt    DateTime  @default(now())
+}
+
+model Project {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String?
+  userId      Int
+  user        User     @relation(fields: [userId], references: [id])
+  createdAt   DateTime @default(now())
 }

@@ -1,16 +1,21 @@
-const jwt = require('jsonwebtoken');
+import jwt from 'jsonwebtoken';
 
-const authenticate = (req, res, next) => {
-  const auth = req.headers.authorization;
-  if (!auth) return res.status(401).json({ error: 'No token' });
-  const token = auth.split(' ')[1];
+export const authenticate = (req, res, next) => {
+  const authHeader = req.headers.authorization;
+
+  if (!authHeader || !authHeader.startsWith('Bearer ')) {
+    return res.status(401).json({ error: 'Token requerido' });
+  }
+
+  const token = authHeader.split(' ')[1];
+
   try {
     const payload = jwt.verify(token, process.env.JWT_SECRET);
+
     req.userId = payload.sub;
+
     next();
-  } catch (err) {
-    return res.status(401).json({ error: 'Token inválido' });
+  } catch (error) {
+    return res.status(401).json({ error: 'Token inválido o expirado' });
   }
 };
-
-module.exports = { authenticate };
