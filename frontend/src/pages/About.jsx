@@ -72,18 +72,18 @@ export default function About() {
           <h3>Equipo</h3>
           <div className="grid grid-3">
             <div className="card">
-              <strong>María López</strong>
-              <p className="small-muted">Directora Ejecutiva</p>
+              <strong>María Inés Manqueros Martinez</strong>
+              <p className="small-muted">Presidenta</p>
             </div>
 
             <div className="card">
               <strong>Vladimir Martínez</strong>
-              <p className="small-muted">Coordinador de Programas</p>
+              <p className="small-muted">Coordinador de redes</p>
             </div>
 
             <div className="card">
               <strong>Claudia Cárdenas</strong>
-              <p className="small-muted">Responsable de Alianzas</p>
+              <p className="small-muted">Coordinadora de Proyectos</p>
             </div>
           </div>
         </section>
