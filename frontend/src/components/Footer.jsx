@@ -44,7 +44,7 @@ export default function Footer() {
               <p className="small-muted footer-contact">
                 Email: unionfuerzaycambio@gmail.com
                 <br />
-                +52 (639)1346427
+                +52 (639)1119744
               </p>
               <div className="social-actions">
   <a
